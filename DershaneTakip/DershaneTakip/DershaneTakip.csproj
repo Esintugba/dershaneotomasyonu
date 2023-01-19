@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{27324964-FA4D-4C24-A8BF-17C8FAA5E9E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DershaneTakip</RootNamespace>
+    <AssemblyName>DershaneTakip</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBDershaneTakipDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBDershaneTakipDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBDershaneTakipDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBDershaneTakipDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBDershaneTakipDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBDershaneTakipDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBDershaneTakipDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBDershaneTakipDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBDershaneTakipDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBDershaneTakipDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBDershaneTakipDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBDershaneTakipDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBDershaneTakipDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBDershaneTakipDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBDershaneTakipDataSetOgrenci.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBDershaneTakipDataSetOgrenci.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBDershaneTakipDataSetOgretmen.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBDershaneTakipDataSetOgretmen.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBDershaneTakipDataSetPersonel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBDershaneTakipDataSetPersonel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Deneme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deneme.Designer.cs">
+      <DependentUpon>Deneme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Denemeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Denemeler.Designer.cs">
+      <DependentUpon>Denemeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DenemeListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DenemeListe.Designer.cs">
+      <DependentUpon>DenemeListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giderler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giderler.Designer.cs">
+      <DependentUpon>Giderler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisCıkıs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisCıkıs.Designer.cs">
+      <DependentUpon>GirisCıkıs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odevler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odevler.Designer.cs">
+      <DependentUpon>Odevler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciBilgiSistemi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciBilgiSistemi.Designer.cs">
+      <DependentUpon>OgrenciBilgiSistemi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciKayit.Designer.cs">
+      <DependentUpon>OgrenciKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgretmenEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgretmenEkrani.Designer.cs">
+      <DependentUpon>OgretmenEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgretmenGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgretmenGirisEkrani.Designer.cs">
+      <DependentUpon>OgretmenGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgretmenKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgretmenKayit.Designer.cs">
+      <DependentUpon>OgretmenKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelKayit.Designer.cs">
+      <DependentUpon>PersonelKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sqlbaglantisi.cs" />
+    <Compile Include="OgrenciGirisEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciGirisEkranı.Designer.cs">
+      <DependentUpon>OgrenciGirisEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VeliGirisEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeliGirisEkranı.Designer.cs">
+      <DependentUpon>VeliGirisEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeliKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeliKayit.Designer.cs">
+      <DependentUpon>VeliKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ödemeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ödemeler.Designer.cs">
+      <DependentUpon>Ödemeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İdareEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İdareEkrani.Designer.cs">
+      <DependentUpon>İdareEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İdareGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İdareGirisEkrani.Designer.cs">
+      <DependentUpon>İdareGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deneme.resx">
+      <DependentUpon>Deneme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Denemeler.resx">
+      <DependentUpon>Denemeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DenemeListe.resx">
+      <DependentUpon>DenemeListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giderler.resx">
+      <DependentUpon>Giderler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisCıkıs.resx">
+      <DependentUpon>GirisCıkıs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odevler.resx">
+      <DependentUpon>Odevler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciBilgiSistemi.resx">
+      <DependentUpon>OgrenciBilgiSistemi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciGirisEkranı.resx">
+      <DependentUpon>OgrenciGirisEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciKayit.resx">
+      <DependentUpon>OgrenciKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgretmenEkrani.resx">
+      <DependentUpon>OgretmenEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgretmenGirisEkrani.resx">
+      <DependentUpon>OgretmenGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgretmenKayit.resx">
+      <DependentUpon>OgretmenKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelKayit.resx">
+      <DependentUpon>PersonelKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VeliGirisEkranı.resx">
+      <DependentUpon>VeliGirisEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeliKayit.resx">
+      <DependentUpon>VeliKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ödemeler.resx">
+      <DependentUpon>Ödemeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İdareEkrani.resx">
+      <DependentUpon>İdareEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İdareGirisEkrani.resx">
+      <DependentUpon>İdareGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DBDershaneTakipDataSet.xsc">
+      <DependentUpon>DBDershaneTakipDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBDershaneTakipDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBDershaneTakipDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBDershaneTakipDataSet.xss">
+      <DependentUpon>DBDershaneTakipDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBDershaneTakipDataSet1.xsc">
+      <DependentUpon>DBDershaneTakipDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DBDershaneTakipDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBDershaneTakipDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBDershaneTakipDataSet1.xss">
+      <DependentUpon>DBDershaneTakipDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DBDershaneTakipDataSet2.xsc">
+      <DependentUpon>DBDershaneTakipDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DBDershaneTakipDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBDershaneTakipDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBDershaneTakipDataSet2.xss">
+      <DependentUpon>DBDershaneTakipDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DBDershaneTakipDataSet3.xsc">
+      <DependentUpon>DBDershaneTakipDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DBDershaneTakipDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBDershaneTakipDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBDershaneTakipDataSet3.xss">
+      <DependentUpon>DBDershaneTakipDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DBDershaneTakipDataSet4.xsc">
+      <DependentUpon>DBDershaneTakipDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DBDershaneTakipDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBDershaneTakipDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBDershaneTakipDataSet4.xss">
+      <DependentUpon>DBDershaneTakipDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DBDershaneTakipDataSet5.xsc">
+      <DependentUpon>DBDershaneTakipDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DBDershaneTakipDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBDershaneTakipDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBDershaneTakipDataSet5.xss">
+      <DependentUpon>DBDershaneTakipDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DBDershaneTakipDataSet6.xsc">
+      <DependentUpon>DBDershaneTakipDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DBDershaneTakipDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBDershaneTakipDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBDershaneTakipDataSet6.xss">
+      <DependentUpon>DBDershaneTakipDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DBDershaneTakipDataSetOgrenci.xsc">
+      <DependentUpon>DBDershaneTakipDataSetOgrenci.xsd</DependentUpon>
+    </None>
+    <None Include="DBDershaneTakipDataSetOgrenci.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBDershaneTakipDataSetOgrenci.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBDershaneTakipDataSetOgrenci.xss">
+      <DependentUpon>DBDershaneTakipDataSetOgrenci.xsd</DependentUpon>
+    </None>
+    <None Include="DBDershaneTakipDataSetOgretmen.xsc">
+      <DependentUpon>DBDershaneTakipDataSetOgretmen.xsd</DependentUpon>
+    </None>
+    <None Include="DBDershaneTakipDataSetOgretmen.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBDershaneTakipDataSetOgretmen.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBDershaneTakipDataSetOgretmen.xss">
+      <DependentUpon>DBDershaneTakipDataSetOgretmen.xsd</DependentUpon>
+    </None>
+    <None Include="DBDershaneTakipDataSetPersonel.xsc">
+      <DependentUpon>DBDershaneTakipDataSetPersonel.xsd</DependentUpon>
+    </None>
+    <None Include="DBDershaneTakipDataSetPersonel.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBDershaneTakipDataSetPersonel.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBDershaneTakipDataSetPersonel.xss">
+      <DependentUpon>DBDershaneTakipDataSetPersonel.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
